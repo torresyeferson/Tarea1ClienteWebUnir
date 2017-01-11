@@ -39,7 +39,12 @@ img{
     width: 100%;
     margin: 0 auto;
 }
-
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    box-shadow:0px 1px 1px #808080;
+}
 .logo .material-icons{
     font-size: 3em;
 }
@@ -61,7 +66,7 @@ img{
     margin:0 auto;
 }
 .header-section{
-     align-items: flex-end!important;
+    align-items: flex-end!important;
 }
 nav{
     width: 85%;
@@ -97,6 +102,38 @@ nav a:hover{
 section{
     padding: 3em 0em;
 }
+
+.presentacion{
+    padding:6em 0em;
+    background-image: url(../images/laptop_2.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 90% 30%;
+     filter: alpha(opacity=50);
+
+}
+
+.presentacion h1{
+ font-weight: bold;
+ width: 90%;
+
+}
+.presentacion h1{
+  font-size: 3em;
+
+}
+.presentacion a{
+    border:1px solid #222;
+    border-radius:1em;
+    text-decoration: none;
+    padding: 0.5em;
+    color:#222;
+}
+.presentacion .item-align{
+    width: 50%;
+      text-align: justify;
+}
+
 .servicios a{
     text-decoration:none;
     border: 1px solid #2f2f2f;
@@ -128,15 +165,7 @@ section{
 .quienes-somos img{
     width: 60%;
 }
-#main-header .sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,0.8);
-  z-index: 999;
 
-}
 footer .item-align{
     width: 30%;
     border-left: 1px solid #2f2f2f;

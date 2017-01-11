@@ -7,17 +7,6 @@ and open the template in the editor.
     Author     : Yadira Torres, Yeferson Torres, Samuel Lopez
 -->
 
-<script>
-    $(window).scroll(function() {
-  if ($(this).scrollTop() > 1){  
-    $('#main-header').addClass("sticky");
-  }
-  else{
-    $('#main-header').removeClass("sticky");
-  }
-});
-</script>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -25,15 +14,30 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(window).scroll(function () {
+                var sticky = $('.sticky'),
+                        scroll = $(window).scrollTop();
+
+                if (scroll >= 100)
+                    sticky.addClass('fixed');
+                else
+                    sticky.removeClass('fixed');
+            });
+        </script>
+
     </head>
+
     <body>
-        <header class="grey-light" id="main-header">
+        <header class="grey-light sticky" >
 
             <div class="flex-align contenedor-interno header-section">
                 <div class="logo ">
                     <i class="material-icons grey-darken-text">account_balance</i>
                 </div>
-                <nav  >
+                <nav  id="main-header">
                     <ul class="flex-align">
                         <li><a  class=" grey-darken-text" href="#">Menu 1</a></li>
                         <li><a  class=" grey-darken-text" href="#">Menu 2</a></li>
@@ -45,6 +49,24 @@ and open the template in the editor.
                 </div>
             </div>
         </header>
+
+        <section class="grey-light grey-darken-text presentacion ">
+            <div class="contenedor-interno flex-align  ">  
+
+                <div class="item-align" >
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                </div>
+                <div class="item-align  grey grey-text">
+                    <div class="contenedor-interno">
+                        <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                        <br>
+                        <a href=""> Lorem ipsum</a>
+                    </div>
+                </div>
+
+            </div> 
+
+        </section>
 
         <section class="grey grey-text">
             <div class="contenedor-interno flex-align servicios">  
