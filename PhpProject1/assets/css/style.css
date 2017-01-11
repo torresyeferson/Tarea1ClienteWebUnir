@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-ene-2017, 9:19:51
+    Author     : Yadira Torres, Yeferson Torres, Samuel Lopez
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular), url("../font/roboto/Roboto-Regular.eot");
+    src: url("../font/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Thin), url("../font/roboto/Roboto-Thin.eot");
+    src: url("../font/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+body{
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+}
+h1,h2,h3{
+    font-weight: 200;
+    padding-bottom: 1em;
+}
+img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo .material-icons{
+    font-size: 3em;
+}
+.grey{
+    background-color: #222;
+}
+.grey-light{
+    background-color: #fafafa;
+}
+.grey-text{
+    color: #e7e7e7;
+}
+
+.grey-darken-text{
+    color: #121212;
+}
+.contenedor-interno{
+    width: 80%;
+    margin:0 auto;
+}
+.header-section{
+     align-items: flex-end!important;
+}
+nav{
+    width: 85%;
+
+}
+
+nav ul{
+    justify-content: flex-start!important;
+}
+nav ul li{
+    list-style: none;
+
+}
+nav a{
+    text-decoration: none;
+    border-bottom: 2px solid #fafafa;
+    padding: 0.5em 1em;
+    display: block;
+
+}
+nav a:hover{
+
+    border-bottom: 2px solid #222;
+}
+.flex-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-align{
+    padding: 1em 0em;
+}
+section{
+    padding: 3em 0em;
+}
+.servicios a{
+    text-decoration:none;
+    border: 1px solid #2f2f2f;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.servicios a:hover{
+    color: white;
+    border: 1px solid white;
+}
+.servicios .item-align{
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #2f2f2f;
+}
+.servicios .material-icons{
+    font-size: 3em;
+}
+
+.quienes-somos h3{
+    font-weight: normal;
+}
+
+.quienes-somos .item-align{
+    width: 50%;
+    text-align: justify;
+}
+
+.quienes-somos img{
+    width: 60%;
+}
+
+
+footer .item-align{
+    width: 30%;
+    border-left: 1px solid #2f2f2f;
+}
+
+footer ul{
+    margin-left: 3em;
+}
+footer h2{
+    text-align: center;
+}
+.copyrigth{
+    text-align: center;
+    background-color: black;
+    padding: 0.5em 0em;
+    font-size: 0.8em;
+}
