@@ -6,6 +6,18 @@ and open the template in the editor.
     Created on : 11-ene-2017, 9:19:51
     Author     : Yadira Torres, Yeferson Torres, Samuel Lopez
 -->
+
+<script>
+    $(window).scroll(function() {
+  if ($(this).scrollTop() > 1){  
+    $('#main-header').addClass("sticky");
+  }
+  else{
+    $('#main-header').removeClass("sticky");
+  }
+});
+</script>
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -15,7 +27,7 @@ and open the template in the editor.
               rel="stylesheet">
     </head>
     <body>
-        <header class="grey-light">
+        <header class="grey-light" id="main-header">
 
             <div class="flex-align contenedor-interno header-section">
                 <div class="logo ">

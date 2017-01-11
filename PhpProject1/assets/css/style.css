@@ -128,8 +128,15 @@ section{
 .quienes-somos img{
     width: 60%;
 }
+#main-header .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 999;
 
-
+}
 footer .item-align{
     width: 30%;
     border-left: 1px solid #2f2f2f;
