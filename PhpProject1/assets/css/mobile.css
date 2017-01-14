@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-ene-2017, 0:07:28
+    Author     : toshiba
+*/
+
+
+
+@media screen and (max-width: 800px) {
+    section {
+        padding:0em; 
+        width: 100%;
+    }
+    .fixed {
+        position: initial;
+    }
+    nav,
+    footer{
+        text-align: center;
+    }
+    .flex-align{
+        display: block;
+    }
+    .presentacion .item-align,
+    .servicios .item-align,
+    .galeria .item-align,
+    .quienes-somos .item-align,
+    footer .item-align{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .presentacion {
+        background: #fafafa;
+    }
+    footer li{
+        list-style: none;
+    }
+}
