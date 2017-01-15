@@ -15,12 +15,20 @@ and open the template in the editor.
         <title>Venta de computadores y accesorios</title>
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="assets/css/mobile.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/css/mobile.css" media="screen" />        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
+      <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">
+
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="http://cdn.datatables.net/1.10.1/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script type="text/javascript" src="http://cdn.datatables.net/responsive/1.0.0/js/dataTables.responsive.js"></script>
+
         <script type="text/javascript" src="assets/js/funcionalidades.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>                
     </head>
     <body>
         <header class="grey-light-1 sticky" >
@@ -170,58 +178,62 @@ and open the template in the editor.
                 </div>
             </div>
         </section>
-        <a name="equipo" class="marcador"></a>
-        <section class=" grey-light grey-darken-text">
-            <div class="contenedor-interno flex-align quienes-somos">  
-                <div class="item-align">
-                    <img src="assets/images/puzzle-azul.png">
-                </div>
-                <div class="item-align">
-                    <h1><strong>Nuestro</strong> equipo</h1> 
-                    <h3><i class="material-icons">face</i> ¿Quiénes somos?</h3>
-                    <p>Jóvenes emprendedores que quieren llegar a ser un ícono en tecnologías en Ecuador. </p>
-                    <br>
-                    <h3><i class="material-icons">favorite_border</i>¿Qué hacemos?</h3>
-                    <p>Nos dedicamos a la comercialización de equipos portatiles y de escritorio. Además contamos con una gama de accesorios.</p>
-                </div>
-            </div> 
-        </section>
-        <footer class="grey grey-text">
-            <div class="contenedor-interno flex-align ">
-                <div class="item-align contacto">
-                    <p>                        
-                        <i class="material-icons">call</i> 098765432
-                    </p>
-                    <p>
-                        <i class="material-icons">receipt</i> ejemplo@email.com
-                    </p>
-                    <p>
-                        <i class="material-icons">room</i>Ecuador
-                    </p>
-                </div>
-                <div class="item-align ">
-                    <center>
-                        <i class="material-icons">face</i> 
-                        <h2> <strong>Quienes </strong> somos</h2>
-                    </center>
-                    <ul>
-                        <li>Yadira Torres</li>
-                        <li>Yeferson Torres</li>
-                        <li>Samuel López</li>
-                    </ul>
-                </div>
-                <div class="item-align">
-                    <h2><strong>Acerca </strong> de</h2>
-                    <ul>
-                        <li><a class="grey-text" href="#servicios">Nuestros servicios</a></li>
-                        <li><a class="grey-text" href="#galeria">Galería de productos</a></li>
-                        <li><a class="grey-text" href="#equipo">Nuestro equipo</a></li>
-                    </ul>
-                </div>
-            </div> 
-            <div class="copyrigth">
-                <p>@Copyright 2017</p>
+        <br>
+    <center>
+        <div id="tabla-container" style="width: 90%"></div>
+    </center>
+    <a name="equipo" class="marcador"></a>
+    <section class=" grey-light grey-darken-text">
+        <div class="contenedor-interno flex-align quienes-somos">  
+            <div class="item-align">
+                <img src="assets/images/puzzle-azul.png">
             </div>
-        </footer>
-    </body>
+            <div class="item-align">
+                <h1><strong>Nuestro</strong> equipo</h1> 
+                <h3><i class="material-icons">face</i> ¿Quiénes somos?</h3>
+                <p>Jóvenes emprendedores que quieren llegar a ser un ícono en tecnologías en Ecuador. </p>
+                <br>
+                <h3><i class="material-icons">favorite_border</i>¿Qué hacemos?</h3>
+                <p>Nos dedicamos a la comercialización de equipos portatiles y de escritorio. Además contamos con una gama de accesorios.</p>
+            </div>
+        </div> 
+    </section>
+    <footer class="grey grey-text">
+        <div class="contenedor-interno flex-align ">
+            <div class="item-align contacto">
+                <p>                        
+                    <i class="material-icons">call</i> 098765432
+                </p>
+                <p>
+                    <i class="material-icons">receipt</i> ejemplo@email.com
+                </p>
+                <p>
+                    <i class="material-icons">room</i>Ecuador
+                </p>
+            </div>
+            <div class="item-align ">
+                <center>
+                    <i class="material-icons">face</i> 
+                    <h2> <strong>Quienes </strong> somos</h2>
+                </center>
+                <ul>
+                    <li>Yadira Torres</li>
+                    <li>Yeferson Torres</li>
+                    <li>Samuel López</li>
+                </ul>
+            </div>
+            <div class="item-align">
+                <h2><strong>Acerca </strong> de</h2>
+                <ul>
+                    <li><a class="grey-text" href="#servicios">Nuestros servicios</a></li>
+                    <li><a class="grey-text" href="#galeria">Galería de productos</a></li>
+                    <li><a class="grey-text" href="#equipo">Nuestro equipo</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="copyrigth">
+            <p>@Copyright 2017</p>
+        </div>
+    </footer>
+</body>
 </html>
