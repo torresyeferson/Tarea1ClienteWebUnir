@@ -39,8 +39,7 @@ and open the template in the editor.
                         <li><a  class=" grey-darken-text" href="../#consulta">Consulta</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <a href=""> <i class="material-icons grey-darken-text">find_in_page</i></a> 
+                <div> 
                     <a href="#openModal"><i class="material-icons grey-darken-text">email</i></a> 
                 </div>
             </div>

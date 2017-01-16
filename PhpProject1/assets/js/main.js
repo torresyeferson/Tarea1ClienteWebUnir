@@ -112,12 +112,14 @@ function drawRow(rowData) {
     row.append($("<td>" + rowData.firstName + "</td>"));
     row.append($("<td>" + rowData.lastName + "</td>"));
 }
+
+
 $(document).ready(function () {
     //use json and create dynamic table   
     //http://jsperf.com/table-rows-20120430/3
-    var colData = ["Equipo", "Modelo","Valor","Sucursal"];
-    var rowData = [["Laptop", "Toshiba I5","$850,50","Loja"],["Laptop", "Dell I5","$1000,50","Loja"],["Teclado", "Multifunción","$20,50","Loja"],["Mouse", "Genius 200","$8,50","Manta"],
-    ["Audifonos", "Extratech 500","$15,50","Manta"],["PC", "Core i7 Tarjeta de Video","$998,50","Manta"],["Laptop", "HP I5 Touch","$850,50","Loja"],["Laptop", "ASUS ROGUE","$1850,50","Loja"]];
+    var colData = ["Equipo", "Modelo", "Valor", "Sucursal"];
+    var rowData = [["Laptop", "Toshiba I5", "$850,50", "Loja"], ["Laptop", "Dell I5", "$1000,50", "Loja"], ["Teclado", "Multifunción", "$20,50", "Loja"], ["Mouse", "Genius 200", "$8,50", "Manta"],
+        ["Audifonos", "Extratech 500", "$15,50", "Manta"], ["PC", "Core i7 Tarjeta de Video", "$998,50", "Manta"], ["Laptop", "HP I5 Touch", "$850,50", "Loja"], ["Laptop", "ASUS ROGUE", "$1850,50", "Loja"]];
     var data = {"Cols": colData, "Rows": rowData};
 
     var table = $('<table/>').attr("id", "userquerytable").addClass("display").attr("cellspacing", "0").attr("width", "100%");

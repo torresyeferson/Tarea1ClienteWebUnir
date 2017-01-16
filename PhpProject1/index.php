@@ -18,8 +18,8 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="assets/css/mobile.css" media="screen" />        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
-      <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">
+        <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
+        <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">
 
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -47,7 +47,6 @@ and open the template in the editor.
                     </ul>
                 </nav>
                 <div>
-                    <a href=""> <i class="material-icons grey-darken-text">find_in_page</i></a> 
                     <a href="#openModal"><i class="material-icons grey-darken-text">email</i></a> 
                 </div>
             </div>
