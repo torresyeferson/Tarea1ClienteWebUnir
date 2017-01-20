@@ -7,12 +7,12 @@ if (!$mysqli = getConectionDb()) {
     $requestBody = file_get_contents('php://input');
     $json = json_decode($requestBody, true);
     $eliminado = 0;    
-    $insertSql = "INSERT INTO persona (nombres, apellidos,documento_identificacion,fecha_nacimiento, direccion, correo, telefono, eliminado) "
-            . "VALUES(?, ?, ?, ?, ?, ?, ?, ? )";
+    $insertSql = "INSERT INTO producto (producto,categoria,precio_venta,precio_compra, eliminado) "
+            . "VALUES(?, ?, ?, ?, ?)";
 
     $stmt = $mysqli->prepare($insertSql);
     if ($stmt) {
-        $stmt->bind_param("sssssssi", $mysqli->real_escape_string(utf8_decode($json["nombrePersona"])), $mysqli->real_escape_string(utf8_decode($json["apellidoPersona"])), $mysqli->real_escape_string(utf8_decode($json["documentoIdentificacion"])), $mysqli->real_escape_string($json["dateOfBirth"]), $mysqli->real_escape_string(utf8_decode($json["direccion"])), $mysqli->real_escape_string($json["email"]), $mysqli->real_escape_string($json["telefono"]), $eliminado);
+        $stmt->bind_param("sissi", $mysqli->real_escape_string(utf8_decode($json["producto"])),$json["categoria"],$json["precioVenta"],$json["precioCompra"] , $eliminado);
         $stmt->execute();
         if ($stmt->affected_rows > 0) {
             echo "{success: true, message: 'Persona registrada correctamente'}";

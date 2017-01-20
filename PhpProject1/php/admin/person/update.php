@@ -1,6 +1,6 @@
 <?php
 
-include ('../../../dll/config.php');
+include('../config/config.php');
 
 if (!$mysqli = getConectionDb()) {
     echo "{success: false, message: '$errorConexion'}";
